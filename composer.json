@@ -1,0 +1,25 @@
+{
+    "name": "todosoft/skd-api-dte",
+    "description": "SDK que falicita la integracion con api de facturacion",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "7.4.x-dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9.5.x-dev",
+        "psy/psysh": "@stable"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Todosoft\\SkdApiDte\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Marcos Pulgar Acevedo",
+            "email": "marcos.pulgar.a@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
