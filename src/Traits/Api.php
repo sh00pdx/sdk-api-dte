@@ -10,6 +10,10 @@ trait Api {
      */
     public function performRequest( $method, $requestUrl, $formParams = [], $headers = [] ) {
 
+
+        error_log('TOKEN: '. $this->_TOKEN);
+        error_log('BASE_URL : '.$this->BASE_URL);
+
         try {
             $client = new Client( [
                 'base_uri' => $this->BASE_URL,
