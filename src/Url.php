@@ -9,7 +9,7 @@ class Url {
     
     public function __construct()
     {
-        $URLS = [
+        $this->URLS = [
             'URL_BASE' => $_ENV['URL_BASE'] ?? 'ec2-54-172-105-92.compute-1.amazonaws.com/api/'
         ];
     }
