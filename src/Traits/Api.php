@@ -15,15 +15,13 @@ trait Api {
         error_log('BASE_URL : '.$this->BASE_URL);
 
         try {
-            $client = new Client( [
-                'base_uri' => $this->BASE_URL,
-            ] );
+            $client = new Client();
     
             if ( isset( $this->_TOKEN ) ) {
                 $headers['Authorization'] = "Bearer {$this->_TOKEN}";
             }
     
-            $response = $client->request( $method, $requestUrl, ['form_params' => $formParams, 'headers' => $headers] );
+            $response = $client->request( $method, $this->BASE_URL.''.$requestUrl, ['form_params' => $formParams, 'headers' => $headers] );
     
             return $response->getBody()->getContents();
         } catch (\Throwable $th) {
@@ -42,7 +40,7 @@ trait Api {
                 $headers['Authorization'] = "Bearer {$this->_TOKEN}";
             }
     
-            $response = $client->request( $method, $requestUrl, ['multipart' => $this->formatMultipart($multipart), 'headers' => $headers] );
+            $$response = $client->request( $method, $this->BASE_URL.''.$requestUrl, ['multipart' => $this->formatMultipart($multipart), 'headers' => $headers] );
     
             return $response->getBody()->getContents();
         } catch (\Throwable $th) {
