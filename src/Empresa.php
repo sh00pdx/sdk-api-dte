@@ -115,6 +115,8 @@ class Empresa {
         $this->_TOKEN   = $token;
         $Url            = new Url();
         $this->BASE_URL = $Url->get( 'BASE_URL' );
+        error_log('TOKEN: '.$token);
+        error_log('BASE_URL: '.$Url->get( 'BASE_URL' ));
     }
 
     public function crear() {

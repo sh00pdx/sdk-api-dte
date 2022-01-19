@@ -12,11 +12,11 @@ trait Api {
 
         try {
             $client = new Client( [
-                'base_uri' => $this->baseUri,
+                'base_uri' => $this->BASE_URL,
             ] );
     
-            if ( isset( $this->token ) ) {
-                $headers['Authorization'] = "Bearer {$this->TOKEN}";
+            if ( isset( $this->_TOKEN ) ) {
+                $headers['Authorization'] = "Bearer {$this->_TOKEN}";
             }
     
             $response = $client->request( $method, $requestUrl, ['form_params' => $formParams, 'headers' => $headers] );
@@ -31,11 +31,11 @@ trait Api {
     public function performRequestFile( $method, $requestUrl, $multipart = [], $headers = [] ) {
         try {
             $client = new Client( [
-                'base_uri' => $this->baseUri,
+                'base_uri' => $this->BASE_URL,
             ] );
     
-            if ( isset( $this->token ) ) {
-                $headers['Authorization'] = "Bearer {$this->TOKEN}";
+            if ( isset( $this->_TOKEN ) ) {
+                $headers['Authorization'] = "Bearer {$this->_TOKEN}";
             }
     
             $response = $client->request( $method, $requestUrl, ['multipart' => $this->formatMultipart($multipart), 'headers' => $headers] );
