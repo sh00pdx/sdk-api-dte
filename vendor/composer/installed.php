@@ -1,12 +1,12 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
-        'name' => 'todosoft/skd-api-dte',
+        'reference' => 'd69c09cfcc752ae02cb360b3ead86c8b28df64bd',
+        'name' => 'todosoft/sdk-api-dte',
         'dev' => true,
     ),
     'versions' => array(
@@ -20,14 +20,12 @@
             'dev_requirement' => true,
         ),
         'guzzlehttp/guzzle' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
+            'pretty_version' => '7.4.0',
+            'version' => '7.4.0.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../guzzlehttp/guzzle',
-            'aliases' => array(
-                0 => '7.4.x-dev',
-            ),
-            'reference' => 'c1fd316f0a0f3325ed1e7cdbe61030418b868f9f',
+            'aliases' => array(),
+            'reference' => '868b3571a039f0ebc11ac8f344f4080babe2cb94',
             'dev_requirement' => false,
         ),
         'guzzlehttp/promises' => array(
@@ -524,13 +522,13 @@
             'reference' => '34a41e998c2183e22995f158c581e7b5e755ab9e',
             'dev_requirement' => true,
         ),
-        'todosoft/skd-api-dte' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+        'todosoft/sdk-api-dte' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => 'd69c09cfcc752ae02cb360b3ead86c8b28df64bd',
             'dev_requirement' => false,
         ),
         'webmozart/assert' => array(

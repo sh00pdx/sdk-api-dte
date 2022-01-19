@@ -20,8 +20,8 @@ class ComposerStaticInitf099eb56e38a4c8bfbd54951940b46b6
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
-        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -35,7 +35,7 @@ class ComposerStaticInitf099eb56e38a4c8bfbd54951940b46b6
         ),
         'T' => 
         array (
-            'Todosoft\\SkdApiDte\\' => 19,
+            'ToDoSoft\\' => 9,
         ),
         'S' => 
         array (
@@ -83,7 +83,7 @@ class ComposerStaticInitf099eb56e38a4c8bfbd54951940b46b6
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
         ),
-        'Todosoft\\SkdApiDte\\' => 
+        'ToDoSoft\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
