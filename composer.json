@@ -1,5 +1,5 @@
 {
-    "name": "todosoft/skd-api-dte",
+    "name": "todosoft/sdk-api-dte",
     "description": "SDK que falicita la integracion con api de facturacion",
     "type": "library",
     "require": {
@@ -12,7 +12,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Todosoft\\SkdApiDte\\": "src/"
+            "ToDoSoft\\": "src/"
         }
     },
     "authors": [
